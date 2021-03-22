@@ -1,0 +1,133 @@
+<?xml version="1.0" ?>
+<data>
+   <annotation>
+      <spot>Pagan</spot>
+      <entity>Paganism</entity>
+      <score>0.226792946458</score>
+   </annotation>
+   <annotation>
+      <spot>group</spot>
+      <entity>Musical ensemble</entity>
+      <score>0.184208601713</score>
+   </annotation>
+   <annotation>
+      <spot>covers</spot>
+      <entity>Cover version</entity>
+      <score>0.108660303056</score>
+   </annotation>
+   <annotation>
+      <spot>resurrection</spot>
+      <entity>Resurrection (New Found Glory album)</entity>
+      <score>0.182915955782</score>
+   </annotation>
+   <annotation>
+      <spot>revival</spot>
+      <entity>Christian revival</entity>
+      <score>0.19132694602</score>
+   </annotation>
+   <annotation>
+      <spot>old</spot>
+      <entity>Old Testament</entity>
+      <score>0.269394665956</score>
+   </annotation>
+   <annotation>
+      <spot>pre-Christian</spot>
+      <entity>Paganism</entity>
+      <score>0.234024047852</score>
+   </annotation>
+   <annotation>
+      <spot>religions</spot>
+      <entity>Religion</entity>
+      <score>0.245317280293</score>
+   </annotation>
+   <annotation>
+      <spot>perspective</spot>
+      <entity>Point of view (philosophy)</entity>
+      <score>0.179262861609</score>
+   </annotation>
+   <annotation>
+      <spot>Roman empire</spot>
+      <entity>Roman Empire</entity>
+      <score>0.223329156637</score>
+   </annotation>
+   <annotation>
+      <spot>adopted</spot>
+      <entity>Adoption</entity>
+      <score>0.112107165158</score>
+   </annotation>
+   <annotation>
+      <spot>pagans</spot>
+      <entity>Paganism</entity>
+      <score>0.28756031394</score>
+   </annotation>
+   <annotation>
+      <spot>polytheistic</spot>
+      <entity>Polytheism</entity>
+      <score>0.623125612736</score>
+   </annotation>
+   <annotation>
+      <spot>believe</spot>
+      <entity>Belief</entity>
+      <score>0.3342423141</score>
+   </annotation>
+   <annotation>
+      <spot>pantheon</spot>
+      <entity>Pantheon (religion)</entity>
+      <score>0.427527725697</score>
+   </annotation>
+   <annotation>
+      <spot>gods</spot>
+      <entity>Deity</entity>
+      <score>0.365355849266</score>
+   </annotation>
+   <annotation>
+      <spot>spirits</spot>
+      <entity>Spirit</entity>
+      <score>0.303784936666</score>
+   </annotation>
+   <annotation>
+      <spot>others</spot>
+      <entity>Religion in Pakistan</entity>
+      <score>0.152102530003</score>
+   </annotation>
+   <annotation>
+      <spot>believe</spot>
+      <entity>Belief</entity>
+      <score>0.199510633945</score>
+   </annotation>
+   <annotation>
+      <spot>gods</spot>
+      <entity>Deity</entity>
+      <score>0.149710834026</score>
+   </annotation>
+   <annotation>
+      <spot>male</spot>
+      <entity>Male</entity>
+      <score>0.174887478352</score>
+   </annotation>
+   <annotation>
+      <spot>male and female</spot>
+      <entity>Gender of connectors and fasteners</entity>
+      <score>0.12795470655</score>
+   </annotation>
+   <annotation>
+      <spot>female</spot>
+      <entity>Female</entity>
+      <score>0.261334389448</score>
+   </annotation>
+   <annotation>
+      <spot>monotheistic</spot>
+      <entity>Monotheism</entity>
+      <score>0.262785464525</score>
+   </annotation>
+   <annotation>
+      <spot>Pagan</spot>
+      <entity>Norse religion</entity>
+      <score>0.236001640558</score>
+   </annotation>
+   <annotation>
+      <spot>pagans</spot>
+      <entity>Paganism</entity>
+      <score>0.169392108917</score>
+   </annotation>
+</data>

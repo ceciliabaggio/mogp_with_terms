@@ -1,0 +1,33 @@
+<?xml version="1.0" ?>
+<data>
+   <annotation>
+      <spot>Information</spot>
+      <entity>Information</entity>
+      <score>0.288630604744</score>
+   </annotation>
+   <annotation>
+      <spot>organizations</spot>
+      <entity>Organization</entity>
+      <score>0.292033225298</score>
+   </annotation>
+   <annotation>
+      <spot>research</spot>
+      <entity>Research</entity>
+      <score>0.227222621441</score>
+   </annotation>
+   <annotation>
+      <spot>information</spot>
+      <entity>Information technology</entity>
+      <score>0.204500630498</score>
+   </annotation>
+   <annotation>
+      <spot>services</spot>
+      <entity>Service (economics)</entity>
+      <score>0.193962410092</score>
+   </annotation>
+   <annotation>
+      <spot>air quality</spot>
+      <entity>Air pollution</entity>
+      <score>0.244084477425</score>
+   </annotation>
+</data>

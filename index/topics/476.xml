@@ -1,0 +1,43 @@
+<?xml version="1.0" ?>
+<data>
+   <annotation>
+      <spot>category</spot>
+      <entity>Categorization</entity>
+      <score>0.105433173478</score>
+   </annotation>
+   <annotation>
+      <spot>web</spot>
+      <entity>Website</entity>
+      <score>0.287765830755</score>
+   </annotation>
+   <annotation>
+      <spot>web sites</spot>
+      <entity>Website</entity>
+      <score>0.238182157278</score>
+   </annotation>
+   <annotation>
+      <spot>hobby</spot>
+      <entity>Hobby</entity>
+      <score>0.150012537837</score>
+   </annotation>
+   <annotation>
+      <spot>music collecting</spot>
+      <entity>Record collecting</entity>
+      <score>0.10000000149</score>
+   </annotation>
+   <annotation>
+      <spot>Internet</spot>
+      <entity>Internet</entity>
+      <score>0.203164964914</score>
+   </annotation>
+   <annotation>
+      <spot>music</spot>
+      <entity>Music</entity>
+      <score>0.165014386177</score>
+   </annotation>
+   <annotation>
+      <spot>collectors</spot>
+      <entity>Record collecting</entity>
+      <score>0.106703005731</score>
+   </annotation>
+</data>

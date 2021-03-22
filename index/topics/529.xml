@@ -1,0 +1,43 @@
+<?xml version="1.0" ?>
+<data>
+   <annotation>
+      <spot>Solar System</spot>
+      <entity>Solar System</entity>
+      <score>0.640332520008</score>
+   </annotation>
+   <annotation>
+      <spot>Sun</spot>
+      <entity>Sun</entity>
+      <score>0.431022793055</score>
+   </annotation>
+   <annotation>
+      <spot>nine planets</spot>
+      <entity>Solar System</entity>
+      <score>0.380762249231</score>
+   </annotation>
+   <annotation>
+      <spot>asteroids</spot>
+      <entity>Asteroid</entity>
+      <score>0.478621423244</score>
+   </annotation>
+   <annotation>
+      <spot>comets</spot>
+      <entity>Comet</entity>
+      <score>0.369529366493</score>
+   </annotation>
+   <annotation>
+      <spot>orbit</spot>
+      <entity>Orbit</entity>
+      <score>0.382422059774</score>
+   </annotation>
+   <annotation>
+      <spot>orbit the Sun</spot>
+      <entity>Heliocentric orbit</entity>
+      <score>0.321242958307</score>
+   </annotation>
+   <annotation>
+      <spot>Sun</spot>
+      <entity>Sun</entity>
+      <score>0.380049884319</score>
+   </annotation>
+</data>

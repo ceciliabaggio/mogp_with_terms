@@ -1,0 +1,13 @@
+deap>=1.0.2
+nltk==3.0.0
+numpy==1.12.1
+scipy==0.19.0
+matplotlib==2.1.2
+tabulate==0.8.2
+pyenchant==2.0.0
+bs4
+BeautifulSoup==3.2.1
+beautifulsoup4==4.6.1
+
+
+

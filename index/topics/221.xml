@@ -1,0 +1,83 @@
+<?xml version="1.0" ?>
+<data>
+   <annotation>
+      <spot>Camping</spot>
+      <entity>Camping</entity>
+      <score>0.255068659782</score>
+   </annotation>
+   <annotation>
+      <spot>outdoor</spot>
+      <entity>Wilderness</entity>
+      <score>0.140431776643</score>
+   </annotation>
+   <annotation>
+      <spot>recreational activity</spot>
+      <entity>Recreation</entity>
+      <score>0.227153539658</score>
+   </annotation>
+   <annotation>
+      <spot>living</spot>
+      <entity>Life</entity>
+      <score>0.171675667167</score>
+   </annotation>
+   <annotation>
+      <spot>outdoors</spot>
+      <entity>Outdoor recreation</entity>
+      <score>0.236006528139</score>
+   </annotation>
+   <annotation>
+      <spot>tent</spot>
+      <entity>Tent</entity>
+      <score>0.325008034706</score>
+   </annotation>
+   <annotation>
+      <spot>recreational vehicle</spot>
+      <entity>Recreational vehicle</entity>
+      <score>0.424193561077</score>
+   </annotation>
+   <annotation>
+      <spot>civilization</spot>
+      <entity>Civilization</entity>
+      <score>0.164723321795</score>
+   </annotation>
+   <annotation>
+      <spot>nature</spot>
+      <entity>Nature</entity>
+      <score>0.266481846571</score>
+   </annotation>
+   <annotation>
+      <spot>Camping</spot>
+      <entity>Camping</entity>
+      <score>0.268468290567</score>
+   </annotation>
+   <annotation>
+      <spot>range</spot>
+      <entity>Rangeland</entity>
+      <score>0.155012771487</score>
+   </annotation>
+   <annotation>
+      <spot>survivalist</spot>
+      <entity>Survivalism</entity>
+      <score>0.376299917698</score>
+   </annotation>
+   <annotation>
+      <spot>campers</spot>
+      <entity>Camping</entity>
+      <score>0.156608894467</score>
+   </annotation>
+   <annotation>
+      <spot>electricity</spot>
+      <entity>Electricity</entity>
+      <score>0.272982269526</score>
+   </annotation>
+   <annotation>
+      <spot>plumbing</spot>
+      <entity>Plumbing</entity>
+      <score>0.330252885818</score>
+   </annotation>
+   <annotation>
+      <spot>patio furniture</spot>
+      <entity>Garden furniture</entity>
+      <score>0.355398625135</score>
+   </annotation>
+</data>

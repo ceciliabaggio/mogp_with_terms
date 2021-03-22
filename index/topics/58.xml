@@ -1,0 +1,38 @@
+<?xml version="1.0" ?>
+<data>
+   <annotation>
+      <spot>issue</spot>
+      <entity>Child</entity>
+      <score>0.173718646169</score>
+   </annotation>
+   <annotation>
+      <spot>ecological</spot>
+      <entity>Ecology</entity>
+      <score>0.265008211136</score>
+   </annotation>
+   <annotation>
+      <spot>human</spot>
+      <entity>Human</entity>
+      <score>0.169787794352</score>
+   </annotation>
+   <annotation>
+      <spot>transport</spot>
+      <entity>Transport</entity>
+      <score>0.166500046849</score>
+   </annotation>
+   <annotation>
+      <spot>pollution</spot>
+      <entity>Pollution</entity>
+      <score>0.312235891819</score>
+   </annotation>
+   <annotation>
+      <spot>destruction</spot>
+      <entity>Natural disaster</entity>
+      <score>0.229106888175</score>
+   </annotation>
+   <annotation>
+      <spot>ozone layer</spot>
+      <entity>Ozone depletion</entity>
+      <score>0.510821938515</score>
+   </annotation>
+</data>

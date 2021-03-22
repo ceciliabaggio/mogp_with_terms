@@ -1,0 +1,43 @@
+<?xml version="1.0" ?>
+<data>
+   <annotation>
+      <spot>Management Science</spot>
+      <entity>Operations research</entity>
+      <score>0.452268093824</score>
+   </annotation>
+   <annotation>
+      <spot>category</spot>
+      <entity>Category theory</entity>
+      <score>0.125157892704</score>
+   </annotation>
+   <annotation>
+      <spot>directory</spot>
+      <entity>Directory (computing)</entity>
+      <score>0.120224103332</score>
+   </annotation>
+   <annotation>
+      <spot>theory</spot>
+      <entity>Theory</entity>
+      <score>0.12567281723</score>
+   </annotation>
+   <annotation>
+      <spot>application</spot>
+      <entity>Computer program</entity>
+      <score>0.194063380361</score>
+   </annotation>
+   <annotation>
+      <spot>science</spot>
+      <entity>Science</entity>
+      <score>0.217938825488</score>
+   </annotation>
+   <annotation>
+      <spot>management</spot>
+      <entity>Management</entity>
+      <score>0.141285136342</score>
+   </annotation>
+   <annotation>
+      <spot>topics</spot>
+      <entity>Topics (Aristotle)</entity>
+      <score>0.100338302553</score>
+   </annotation>
+</data>

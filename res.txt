@@ -1,0 +1,134 @@
+134.txt
+187.txt
+1.txt
+  134.txt
+topico numero 134
+Combination selected Co1: Precision@10 & Recall
+Number of Run = 1
+Number of GEN = 10
+Number of POP Size = 10
+Everlapped Entities = 0
+Run local= 1
+Save Dir = /home/cecilia/repos/mogp_with_spots/runs/mogp_2018-07-06_10-04-24/Co1/134
+lucene 6.5.0
+***********************************************
+*     Multi Objective Genetic Programming     *
+*      Web Mining Research Group @ DCIC       *
+***********************************************
+Entities from topic description =  ['"Fruit"', '"Vegetable"', '"Recipe"']
+Spots from topic description =  ['"fruits"', '"vegetables"', '"recipes"']
+SAVING DIRECTORY:  /home/cecilia/repos/mogp_with_spots/runs/mogp_2018-07-06_10-04-24/Co1/134
+TOPIC:  134.txt
+IND SIZE:  XX
+NGEN:  10
+POPSIZE:  10
+SEED:  12803
+CXPB:  0.7
+MUTPB:  0.9
+2 objectives selected for maximization
+INDEX =  mogp_with_spots/index/Set12_utf8.index
+%%%%%% QUERY   0  GEN= 0  RUN=  1
+AND(OR('"Vegetable"', '"Recipe"'), '"Vegetable"')
+nodes:  5
+height:  2
+<Query: +(entity:Vegetable entity:Recipe) +entity:Vegetable>
+Number of arguments: 2 arguments.
+current path:  /home/cecilia/repos/mogp_with_spots/runs/mogp_2018-07-06_10-04-24/Co1/134
+num objetivos:  2
+['134_1_prec@10-Recall_nGen(10)_popSize(10)_indSize(XX)_cross(0.7)_mut(0.9)_seed(12803)_precision.txt']
+['134_1_prec@10-Recall_nGen(10)_popSize(10)_indSize(XX)_cross(0.7)_mut(0.9)_seed(12803)_recall.txt']
+['134_1_prec@10-Recall_nGen(10)_popSize(10)_indSize(XX)_cross(0.7)_mut(0.9)_seed(12803)_entropicPrecision.txt']
+['134_1_prec@10-Recall_nGen(10)_popSize(10)_indSize(XX)_cross(0.7)_mut(0.9)_seed(12803)_entropicRecall.txt']
+['134_1_prec@10-Recall_nGen(10)_popSize(10)_indSize(XX)_cross(0.7)_mut(0.9)_seed(12803)_height_in_evolution.txt']
+File created: *_objective_1_all_run.txt (precision usada)
+File created: *_objective_2_all_run.txt (recall usado)
+File created: *_globalRecall_all_run.txt
+File created: *_meanJaccardIndex_all_run.txt
+num_lines: 110
+File created: *_precision_all_run.txt
+File created: *_recall_all_run.txt
+File created: *_entropicRecall_all_run.txt
+File created: *_entropicPrecision_all_run.txt
+File created: *_individualjaccardIndex_all_run.txt
+File created: *_height_all_run.txt
+Join all fitness made successfully
+  187.txt
+topico numero 187
+Combination selected Co1: Precision@10 & Recall
+Number of Run = 1
+Number of GEN = 10
+Number of POP Size = 10
+Everlapped Entities = 0
+Run local= 1
+Save Dir = /home/cecilia/repos/mogp_with_spots/runs/mogp_2018-07-06_10-04-24/Co1/187
+Number of arguments: 2 arguments.
+current path:  /home/cecilia/repos/mogp_with_spots/runs/mogp_2018-07-06_10-04-24/Co1/134
+num objetivos:  2
+['134_1_prec@10-Recall_nGen(10)_popSize(10)_indSize(XX)_cross(0.7)_mut(0.9)_seed(12803)_precision.txt']
+['134_1_prec@10-Recall_nGen(10)_popSize(10)_indSize(XX)_cross(0.7)_mut(0.9)_seed(12803)_recall.txt']
+['134_1_prec@10-Recall_nGen(10)_popSize(10)_indSize(XX)_cross(0.7)_mut(0.9)_seed(12803)_entropicPrecision.txt']
+['134_1_prec@10-Recall_nGen(10)_popSize(10)_indSize(XX)_cross(0.7)_mut(0.9)_seed(12803)_entropicRecall.txt']
+['134_1_prec@10-Recall_nGen(10)_popSize(10)_indSize(XX)_cross(0.7)_mut(0.9)_seed(12803)_height_in_evolution.txt']
+File created: *_objective_1_all_run.txt (precision usada)
+File created: *_objective_2_all_run.txt (recall usado)
+File created: *_globalRecall_all_run.txt
+File created: *_meanJaccardIndex_all_run.txt
+num_lines: 110
+File created: *_precision_all_run.txt
+File created: *_recall_all_run.txt
+File created: *_entropicRecall_all_run.txt
+File created: *_entropicPrecision_all_run.txt
+File created: *_individualjaccardIndex_all_run.txt
+File created: *_height_all_run.txt
+Join all fitness made successfully
+  1.txt
+topico numero 1
+Combination selected Co1: Precision@10 & Recall
+Number of Run = 1
+Number of GEN = 10
+Number of POP Size = 10
+Everlapped Entities = 0
+Run local= 1
+Save Dir = /home/cecilia/repos/mogp_with_spots/runs/mogp_2018-07-06_10-04-24/Co1/1
+lucene 6.5.0
+***********************************************
+*     Multi Objective Genetic Programming     *
+*      Web Mining Research Group @ DCIC       *
+***********************************************
+Entities from topic description =  ['"Number theory"', '"Memory address"', '"Integer"', '"Rational number"', '"Congruence relation"', '"Divisor"', '"Prime number"', '"Fermat\'s Last Theorem"']
+Spots from topic description =  ['"Number theory"', '"addresses"', '"integer"', '"rational numbers"', '"congruences"', '"divisibility"', '"primes"', '"Fermat\'s Last Theorem"']
+SAVING DIRECTORY:  /home/cecilia/repos/mogp_with_spots/runs/mogp_2018-07-06_10-04-24/Co1/1
+TOPIC:  1.txt
+IND SIZE:  XX
+NGEN:  10
+POPSIZE:  10
+SEED:  12803
+CXPB:  0.7
+MUTPB:  0.9
+2 objectives selected for maximization
+INDEX =  mogp_with_spots/index/Set12_utf8.index
+%%%%%% QUERY   0  GEN= 0  RUN=  1
+AND('"Prime number"', '"Number theory"')
+nodes:  3
+height:  1
+<Query: +entity:Prime number +entity:Number theory>
+Number of arguments: 2 arguments.
+current path:  /home/cecilia/repos/mogp_with_spots/runs/mogp_2018-07-06_10-04-24/Co1/1
+num objetivos:  2
+['1_1_prec@10-Recall_nGen(10)_popSize(10)_indSize(XX)_cross(0.7)_mut(0.9)_seed(12803)_precision.txt']
+['1_1_prec@10-Recall_nGen(10)_popSize(10)_indSize(XX)_cross(0.7)_mut(0.9)_seed(12803)_recall.txt']
+['1_1_prec@10-Recall_nGen(10)_popSize(10)_indSize(XX)_cross(0.7)_mut(0.9)_seed(12803)_entropicPrecision.txt']
+['1_1_prec@10-Recall_nGen(10)_popSize(10)_indSize(XX)_cross(0.7)_mut(0.9)_seed(12803)_entropicRecall.txt']
+['1_1_prec@10-Recall_nGen(10)_popSize(10)_indSize(XX)_cross(0.7)_mut(0.9)_seed(12803)_height_in_evolution.txt']
+File created: *_objective_1_all_run.txt (precision usada)
+File created: *_objective_2_all_run.txt (recall usado)
+File created: *_globalRecall_all_run.txt
+File created: *_meanJaccardIndex_all_run.txt
+num_lines: 110
+File created: *_precision_all_run.txt
+File created: *_recall_all_run.txt
+File created: *_entropicRecall_all_run.txt
+File created: *_entropicPrecision_all_run.txt
+File created: *_individualjaccardIndex_all_run.txt
+File created: *_height_all_run.txt
+Join all fitness made successfully

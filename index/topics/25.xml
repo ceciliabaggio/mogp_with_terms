@@ -1,0 +1,53 @@
+<?xml version="1.0" ?>
+<data>
+   <annotation>
+      <spot>Golf Instruction</spot>
+      <entity>Golf instruction</entity>
+      <score>0.1171875</score>
+   </annotation>
+   <annotation>
+      <spot>information</spot>
+      <entity>Information</entity>
+      <score>0.132899031043</score>
+   </annotation>
+   <annotation>
+      <spot>great game</spot>
+      <entity>The Great Game</entity>
+      <score>0.212174937129</score>
+   </annotation>
+   <annotation>
+      <spot>programs</spot>
+      <entity>Computer program</entity>
+      <score>0.111363880336</score>
+   </annotation>
+   <annotation>
+      <spot>philosophies</spot>
+      <entity>Philosophy</entity>
+      <score>0.178573101759</score>
+   </annotation>
+   <annotation>
+      <spot>methods</spot>
+      <entity>Methodology</entity>
+      <score>0.143982350826</score>
+   </annotation>
+   <annotation>
+      <spot>market</spot>
+      <entity>Market (economics)</entity>
+      <score>0.106600679457</score>
+   </annotation>
+   <annotation>
+      <spot>programs</spot>
+      <entity>Software</entity>
+      <score>0.170417964458</score>
+   </annotation>
+   <annotation>
+      <spot>products</spot>
+      <entity>Product (business)</entity>
+      <score>0.234392911196</score>
+   </annotation>
+   <annotation>
+      <spot>listed</spot>
+      <entity>Initial public offering</entity>
+      <score>0.141348227859</score>
+   </annotation>
+</data>

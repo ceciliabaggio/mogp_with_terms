@@ -1,0 +1,27 @@
+/*.pyc
+index/*.pyc
+corridas/*
+borrar2/*
+
+# INDEXES 
+
+
+index/Set12_utf8_term.index
+index/Set3_utf8_term.index
+index/relevantes_por_topico_Set12/*
+index/relevantes_por_topico_Set3/*
+index/topics_rest
+index/topics_jis
+
+# COMPRESSED INDEXES
+
+index/Set12_utf8.index.tar.gz
+index/Set3_utf8.index.tar.gz
+index/Set3_utf8_term.index.tar.gz
+index/Set12_utf8_term.index.tar.gz
+
+mogp_evaluation/borrar.py
+runs/*
+last_dir_created
+salida.txt
+tree_*

@@ -1,0 +1,1 @@
+Number theory addresses problems about integer and rational numbers. It includes congruences, divisibility, primes, and Fermat's Last Theorem.

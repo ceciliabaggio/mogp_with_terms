@@ -1,0 +1,78 @@
+<?xml version="1.0" ?>
+<data>
+   <annotation>
+      <spot>on-line</spot>
+      <entity>Educational technology</entity>
+      <score>0.136683881283</score>
+   </annotation>
+   <annotation>
+      <spot>aquaculture</spot>
+      <entity>Aquaculture</entity>
+      <score>0.367453426123</score>
+   </annotation>
+   <annotation>
+      <spot>industry</spot>
+      <entity>Industry</entity>
+      <score>0.117834433913</score>
+   </annotation>
+   <annotation>
+      <spot>Here you</spot>
+      <entity>Here for You (Maraaya song)</entity>
+      <score>0.114173226058</score>
+   </annotation>
+   <annotation>
+      <spot>will</spot>
+      <entity>Free will</entity>
+      <score>0.148726373911</score>
+   </annotation>
+   <annotation>
+      <spot>groups, organizations</spot>
+      <entity>Social group</entity>
+      <score>0.296282947063</score>
+   </annotation>
+   <annotation>
+      <spot>companies</spot>
+      <entity>Company</entity>
+      <score>0.147038325667</score>
+   </annotation>
+   <annotation>
+      <spot>growers</spot>
+      <entity>Farmer</entity>
+      <score>0.160744264722</score>
+   </annotation>
+   <annotation>
+      <spot>resources</spot>
+      <entity>Resource</entity>
+      <score>0.17033290863</score>
+   </annotation>
+   <annotation>
+      <spot>engaged</spot>
+      <entity>Pregnancy</entity>
+      <score>0.12121796608</score>
+   </annotation>
+   <annotation>
+      <spot>information</spot>
+      <entity>Information</entity>
+      <score>0.20951962471</score>
+   </annotation>
+   <annotation>
+      <spot>equipment</spot>
+      <entity>Machine</entity>
+      <score>0.207487881184</score>
+   </annotation>
+   <annotation>
+      <spot>services</spot>
+      <entity>Service (economics)</entity>
+      <score>0.270863771439</score>
+   </annotation>
+   <annotation>
+      <spot>industry</spot>
+      <entity>Industry</entity>
+      <score>0.256686449051</score>
+   </annotation>
+   <annotation>
+      <spot>feedback</spot>
+      <entity>Feedback</entity>
+      <score>0.249306514859</score>
+   </annotation>
+</data>

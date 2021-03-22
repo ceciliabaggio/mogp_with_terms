@@ -1,0 +1,43 @@
+<?xml version="1.0" ?>
+<data>
+   <annotation>
+      <spot>manufactures</spot>
+      <entity>Manufacturing</entity>
+      <score>0.264113992453</score>
+   </annotation>
+   <annotation>
+      <spot>products</spot>
+      <entity>Product (business)</entity>
+      <score>0.240632563829</score>
+   </annotation>
+   <annotation>
+      <spot>automate</spot>
+      <entity>Automation</entity>
+      <score>0.24406504631</score>
+   </annotation>
+   <annotation>
+      <spot>Factories</spot>
+      <entity>Factory</entity>
+      <score>0.185694724321</score>
+   </annotation>
+   <annotation>
+      <spot>flow</spot>
+      <entity>Fluid dynamics</entity>
+      <score>0.130317181349</score>
+   </annotation>
+   <annotation>
+      <spot>processes</spot>
+      <entity>Systems engineering</entity>
+      <score>0.233662068844</score>
+   </annotation>
+   <annotation>
+      <spot>automated</spot>
+      <entity>Automation</entity>
+      <score>0.239541247487</score>
+   </annotation>
+   <annotation>
+      <spot>material handling</spot>
+      <entity>Material handling</entity>
+      <score>0.350817620754</score>
+   </annotation>
+</data>

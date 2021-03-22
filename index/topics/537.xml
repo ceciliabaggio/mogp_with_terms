@@ -1,0 +1,18 @@
+<?xml version="1.0" ?>
+<data>
+   <annotation>
+      <spot>birding</spot>
+      <entity>Birdwatching</entity>
+      <score>0.265098571777</score>
+   </annotation>
+   <annotation>
+      <spot>birds</spot>
+      <entity>Bird</entity>
+      <score>0.204105108976</score>
+   </annotation>
+   <annotation>
+      <spot>Europe</spot>
+      <entity>Europe</entity>
+      <score>0.203098028898</score>
+   </annotation>
+</data>

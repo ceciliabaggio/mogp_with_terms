@@ -1,0 +1,183 @@
+<?xml version="1.0" ?>
+<data>
+   <annotation>
+      <spot>scientists</spot>
+      <entity>Science</entity>
+      <score>0.112801894546</score>
+   </annotation>
+   <annotation>
+      <spot>Dismal Science</spot>
+      <entity>The dismal science</entity>
+      <score>0.270270258188</score>
+   </annotation>
+   <annotation>
+      <spot>field</spot>
+      <entity>Field (physics)</entity>
+      <score>0.136152341962</score>
+   </annotation>
+   <annotation>
+      <spot>study</spot>
+      <entity>Experiment</entity>
+      <score>0.127942755818</score>
+   </annotation>
+   <annotation>
+      <spot>production</spot>
+      <entity>Manufacturing</entity>
+      <score>0.190541356802</score>
+   </annotation>
+   <annotation>
+      <spot>distribution</spot>
+      <entity>Distribution (business)</entity>
+      <score>0.278320640326</score>
+   </annotation>
+   <annotation>
+      <spot>exchange</spot>
+      <entity>Trade</entity>
+      <score>0.276627957821</score>
+   </annotation>
+   <annotation>
+      <spot>consumption</spot>
+      <entity>Consumption (economics)</entity>
+      <score>0.258574515581</score>
+   </annotation>
+   <annotation>
+      <spot>wealth</spot>
+      <entity>Wealth</entity>
+      <score>0.280864924192</score>
+   </annotation>
+   <annotation>
+      <spot>issues</spot>
+      <entity>Meat</entity>
+      <score>0.137188240886</score>
+   </annotation>
+   <annotation>
+      <spot>labor</spot>
+      <entity>Labour economics</entity>
+      <score>0.290143191814</score>
+   </annotation>
+   <annotation>
+      <spot>finance</spot>
+      <entity>Finance</entity>
+      <score>0.321301996708</score>
+   </annotation>
+   <annotation>
+      <spot>taxation</spot>
+      <entity>Tax</entity>
+      <score>0.292869448662</score>
+   </annotation>
+   <annotation>
+      <spot>currencies</spot>
+      <entity>Currency</entity>
+      <score>0.23053394258</score>
+   </annotation>
+   <annotation>
+      <spot>political</spot>
+      <entity>Politics</entity>
+      <score>0.122548684478</score>
+   </annotation>
+   <annotation>
+      <spot>interest</spot>
+      <entity>Interest</entity>
+      <score>0.139981478453</score>
+   </annotation>
+   <annotation>
+      <spot>origins</spot>
+      <entity>Renaissance</entity>
+      <score>0.140343800187</score>
+   </annotation>
+   <annotation>
+      <spot>commerce</spot>
+      <entity>Commerce</entity>
+      <score>0.182141378522</score>
+   </annotation>
+   <annotation>
+      <spot>economics</spot>
+      <entity>Economics</entity>
+      <score>0.286827236414</score>
+   </annotation>
+   <annotation>
+      <spot>modern</spot>
+      <entity>Modernism</entity>
+      <score>0.170632645488</score>
+   </annotation>
+   <annotation>
+      <spot>study</spot>
+      <entity>Experiment</entity>
+      <score>0.131166830659</score>
+   </annotation>
+   <annotation>
+      <spot>independent</spot>
+      <entity>Independence</entity>
+      <score>0.147417068481</score>
+   </annotation>
+   <annotation>
+      <spot>moral</spot>
+      <entity>Morality</entity>
+      <score>0.284501791</score>
+   </annotation>
+   <annotation>
+      <spot>political philosophy</spot>
+      <entity>Political philosophy</entity>
+      <score>0.482858598232</score>
+   </annotation>
+   <annotation>
+      <spot>Scottish</spot>
+      <entity>Scottish people</entity>
+      <score>0.149794518948</score>
+   </annotation>
+   <annotation>
+      <spot>href</spot>
+      <entity>HTML</entity>
+      <score>0.151911124587</score>
+   </annotation>
+   <annotation>
+      <spot>Economics</spot>
+      <entity>Economics</entity>
+      <score>0.486925721169</score>
+   </annotation>
+   <annotation>
+      <spot>Economists</spot>
+      <entity>Economics</entity>
+      <score>0.380292952061</score>
+   </annotation>
+   <annotation>
+      <spot>Smith</spot>
+      <entity>Adam Smith</entity>
+      <score>0.413235604763</score>
+   </annotation>
+   <annotation>
+      <spot>Smith,_Adam</spot>
+      <entity>Adam Smith</entity>
+      <score>0.443776249886</score>
+   </annotation>
+   <annotation>
+      <spot>Adam Smith</spot>
+      <entity>Adam Smith</entity>
+      <score>0.472426474094</score>
+   </annotation>
+   <annotation>
+      <spot>Wealth of Nations</spot>
+      <entity>The Wealth of Nations</entity>
+      <score>0.369318187237</score>
+   </annotation>
+   <annotation>
+      <spot>classical&quot; economic</spot>
+      <entity>Classical economics</entity>
+      <score>0.356835365295</score>
+   </annotation>
+   <annotation>
+      <spot>economic theory</spot>
+      <entity>Mathematical economics</entity>
+      <score>0.488674640656</score>
+   </annotation>
+   <annotation>
+      <spot>free-market capitalism</spot>
+      <entity>Laissez-faire</entity>
+      <score>0.421373993158</score>
+   </annotation>
+   <annotation>
+      <spot>capitalism</spot>
+      <entity>Capitalism</entity>
+      <score>0.504210412502</score>
+   </annotation>
+</data>

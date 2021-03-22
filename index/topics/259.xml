@@ -1,0 +1,18 @@
+<?xml version="1.0" ?>
+<data>
+   <annotation>
+      <spot>Investment</spot>
+      <entity>Investment</entity>
+      <score>0.205399990082</score>
+   </annotation>
+   <annotation>
+      <spot>news</spot>
+      <entity>News broadcasting</entity>
+      <score>0.187131136656</score>
+   </annotation>
+   <annotation>
+      <spot>services</spot>
+      <entity>Service (economics)</entity>
+      <score>0.259039252996</score>
+   </annotation>
+</data>

@@ -1,0 +1,73 @@
+<?xml version="1.0" ?>
+<data>
+   <annotation>
+      <spot>Games</spot>
+      <entity>Game theory</entity>
+      <score>0.196294203401</score>
+   </annotation>
+   <annotation>
+      <spot>focus</spot>
+      <entity>Attention</entity>
+      <score>0.148635268211</score>
+   </annotation>
+   <annotation>
+      <spot>warfare</spot>
+      <entity>War</entity>
+      <score>0.209015399218</score>
+   </annotation>
+   <annotation>
+      <spot>politics</spot>
+      <entity>Politics</entity>
+      <score>0.232977077365</score>
+   </annotation>
+   <annotation>
+      <spot>category</spot>
+      <entity>Categorization</entity>
+      <score>0.188522532582</score>
+   </annotation>
+   <annotation>
+      <spot>wars</spot>
+      <entity>War</entity>
+      <score>0.223445147276</score>
+   </annotation>
+   <annotation>
+      <spot>political</spot>
+      <entity>Politics</entity>
+      <score>0.229988977313</score>
+   </annotation>
+   <annotation>
+      <spot>situations</spot>
+      <entity>Situationist International</entity>
+      <score>0.337126463652</score>
+   </annotation>
+   <annotation>
+      <spot>may</spot>
+      <entity>May 1968 events in France</entity>
+      <score>0.298150539398</score>
+   </annotation>
+   <annotation>
+      <spot>historical</spot>
+      <entity>History</entity>
+      <score>0.192320555449</score>
+   </annotation>
+   <annotation>
+      <spot>nature</spot>
+      <entity>Nature</entity>
+      <score>0.129186287522</score>
+   </annotation>
+   <annotation>
+      <spot>war games</spot>
+      <entity>The War Games</entity>
+      <score>0.175893887877</score>
+   </annotation>
+   <annotation>
+      <spot>set</spot>
+      <entity>Setting (narrative)</entity>
+      <score>0.195469766855</score>
+   </annotation>
+   <annotation>
+      <spot>fictional universes</spot>
+      <entity>Fictional universe</entity>
+      <score>0.496619462967</score>
+   </annotation>
+</data>

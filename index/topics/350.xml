@@ -1,0 +1,98 @@
+<?xml version="1.0" ?>
+<data>
+   <annotation>
+      <spot>Birth control</spot>
+      <entity>Birth control</entity>
+      <score>0.714797735214</score>
+   </annotation>
+   <annotation>
+      <spot>contraception</spot>
+      <entity>Birth control</entity>
+      <score>0.490306586027</score>
+   </annotation>
+   <annotation>
+      <spot>prevention</spot>
+      <entity>Preventive healthcare</entity>
+      <score>0.248883575201</score>
+   </annotation>
+   <annotation>
+      <spot>pregnancy</spot>
+      <entity>Pregnancy</entity>
+      <score>0.382667452097</score>
+   </annotation>
+   <annotation>
+      <spot>sexual intercourse</spot>
+      <entity>Sexual intercourse</entity>
+      <score>0.289466738701</score>
+   </annotation>
+   <annotation>
+      <spot>physical</spot>
+      <entity>Human body</entity>
+      <score>0.110586926341</score>
+   </annotation>
+   <annotation>
+      <spot>hormonal</spot>
+      <entity>Endocrine system</entity>
+      <score>0.253916293383</score>
+   </annotation>
+   <annotation>
+      <spot>manipulation</spot>
+      <entity>Joint manipulation</entity>
+      <score>0.246382445097</score>
+   </annotation>
+   <annotation>
+      <spot>surgical</spot>
+      <entity>Surgery</entity>
+      <score>0.39088010788</score>
+   </annotation>
+   <annotation>
+      <spot>surgical intervention</spot>
+      <entity>Surgery</entity>
+      <score>0.269280195236</score>
+   </annotation>
+   <annotation>
+      <spot>people</spot>
+      <entity>People (magazine)</entity>
+      <score>0.169942557812</score>
+   </annotation>
+   <annotation>
+      <spot>abortion</spot>
+      <entity>Abortion</entity>
+      <score>0.342015773058</score>
+   </annotation>
+   <annotation>
+      <spot>abstinence</spot>
+      <entity>Abstinence</entity>
+      <score>0.313316017389</score>
+   </annotation>
+   <annotation>
+      <spot>br</spot>
+      <entity>Brother (Catholic)</entity>
+      <score>0.220212489367</score>
+   </annotation>
+   <annotation>
+      <spot>Contraception</spot>
+      <entity>Birth control</entity>
+      <score>0.372991472483</score>
+   </annotation>
+   <annotation>
+      <spot>terms</spot>
+      <entity>Jargon</entity>
+      <score>0.176463767886</score>
+   </annotation>
+   <annotation>
+      <spot>politics</spot>
+      <entity>Politics</entity>
+      <score>0.247848346829</score>
+   </annotation>
+   <annotation>
+      <spot>religion</spot>
+      <entity>Religion</entity>
+      <score>0.261501222849</score>
+   </annotation>
+   <annotation>
+      <spot>ethics</spot>
+      <entity>Ethics</entity>
+      <score>0.341573983431</score>
+   </annotation>
+</data>
