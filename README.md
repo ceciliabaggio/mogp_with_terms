@@ -35,4 +35,6 @@ MOGP_TRAINING.bash <number_of_runs> <number_of_generations> <population_size> <o
 
 
 The core of the system is in file: MOGPqueryReformulation.py
-Lucene indexes and the DMOZ dataset are not on gitHub. Please write me an email (cb@cs.uns.edu.ar) and I will be glad to send them to you :)
+Lucene indexes and the DMOZ dataset are not on gitHub. 
+
+Please write me an email (cb@cs.uns.edu.ar) and I will be glad to send them to you :)
