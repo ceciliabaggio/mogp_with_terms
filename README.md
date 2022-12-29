@@ -32,3 +32,7 @@ MOGP_TRAINING.bash <number_of_runs> <number_of_generations> <population_size> <o
 3. Select 'Edit/Arguments'
 4. Put the following arguments: **1 10 10 7 69 529.txt 0.7 0.03 /home/cecilia/repositories/runs**
 5. Be aware of having at least one topic file for the context in the directory. In this case "529.txt"
+
+
+The core of the system is in file: MOGPqueryReformulation.py
+Lucene indexes and the DMOZ dataset are not on gitHub. Please write me an email (cb@cs.uns.edu.ar) and I will be glad to send them to you :)
