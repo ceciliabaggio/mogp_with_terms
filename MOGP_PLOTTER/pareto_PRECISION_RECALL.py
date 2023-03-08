@@ -16,8 +16,11 @@ import matplotlib.pyplot as plt
 plt.ioff()
 ###
 
-matplotlib.rcParams['text.usetex'] = True
-matplotlib.rcParams['text.latex.unicode'] = True
+import math
+from matplotlib import rc
+#rc('font',**{'family':'sans-serif','sans-serif':['Helvetica']})
+rc('text', usetex=True)
+
 
 import sys
 import os
@@ -56,17 +59,17 @@ if len(sys.argv) == 4:
     popSize = int(sys.argv[1])
     directoryTopic = sys.argv[2]
     combination = str(sys.argv[3])
-    print "popSize = ", popSize
-    print "directoryTopic = ", directoryTopic
-    print "combination = ", combination
+    print ("popSize = ", popSize)
+    print ("directoryTopic = ", directoryTopic)
+    print ("combination = ", combination)
     
     
 else:
-    print "debe ingresar el numero de individuos de la poblacion y el \
-directorio de donde leer"
-    print " "
-    print "Ejemplo: python \
-pareto_PRECISION_RECALL.py 100 /home/Cecilia/workspace/.../Co5/215/"
+    print ("debe ingresar el numero de individuos de la poblacion y el \
+directorio de donde leer")
+    print (" ")
+    print ("Ejemplo: python \
+pareto_PRECISION_RECALL.py 100 /home/Cecilia/workspace/.../Co5/215/")
     sys.exit()
     
 #por cada topico, entro al directorio y levantar precision_all_run y 
@@ -77,22 +80,22 @@ for filename in files:
     
     if "_precision_all_run.txt" in filename:
         base = filename[:-21]
-        print base
+        print (base)
         filename_prec = directoryTopic+ filename
         #filename_save_prec_rec_queries = open(directoryTopic + base + 
         #                            "queries_pareto_Pr-Rec_last_gen.txt", "w")
         
     elif "_recall_all_run.txt" in filename: #is_substring
         base = filename[:-18]
-        print base
+        print (base)
         filename_rec = directoryTopic +  filename
     #elif  "_queries.txt" in filename: #is_substring
         #base = filename[:-11]
         #print base
         #filename_q = directoryTopic + filename
                         
-print '\n',filename_prec
-print filename_rec
+print ('\n',filename_prec)
+print (filename_rec)
 
 
 #filename_prec = directoryTopic + '215_5_Prec@10-EntropicRecall-Jaccard_\
@@ -122,7 +125,7 @@ nRuns = len(last_gen_recall[1])
 #print "nRuns = ", nRuns
 Qs_queries = []
 for run in range(0,nRuns):
-    print "RUN = ", run+1
+    print ("RUN = ", run+1)
     fig = plt.figure()
     
     filename_save_prec_rec_points = open(directoryTopic + base + 
@@ -144,7 +147,7 @@ for run in range(0,nRuns):
                                         Ys_recall, Qs_queries, True, True) 
                                         #Qs_queries unused por ahora
     
-    print "Frente de Pareto:"
+    print ("Frente de Pareto:")
     for i in range(0, len(p_front_Xs)):
         #print p_front_Xs[i] , p_front_Ys[i]
         filename_save_prec_rec_pareto.write(str(p_front_Xs[i]) + "\t" + str(p_front_Ys[i]) + "\n")
@@ -171,7 +174,7 @@ for run in range(0,nRuns):
         
     if (combination in ['1']):                
         # Plot a scatter graph of all results
-        plt.scatter(Xs_precision, Ys_recall, c='#007FAE', marker = 'o', s=65, linewidths = 1, facecolor = '#007FAE', label= 'Co1')
+        plt.scatter(Xs_precision, Ys_recall, c='#007FAE', marker = 'o', s=65, linewidths = 1, facecolor = '#007FAE', label= 'Co1: Evolved population')
         # Then plot the Pareto frontier on top
         plt.plot(p_front_Xs, p_front_Ys, c='#007FAE')
     elif (combination in ['2']):
@@ -181,7 +184,7 @@ for run in range(0,nRuns):
         plt.plot(p_front_Xs, p_front_Ys, c='#00BDBD')
     elif (combination in ['3']):
         # Plot a scatter graph of all results
-        plt.scatter(Xs_precision, Ys_recall, c='#FF6600', marker = '<', s=65, linewidths = 1, facecolor = '#FF6600', label= 'Co3')
+        plt.scatter(Xs_precision, Ys_recall, c='#FF6600', marker = '<', s=65, linewidths = 1, facecolor = '#FF6600', label= 'Co3: Evolved population')
         # Then plot the Pareto frontier on top
         plt.plot(p_front_Xs, p_front_Ys, c='#FF6600')
     elif (combination in ['4']):
@@ -215,9 +218,9 @@ for run in range(0,nRuns):
     
     plt.ylabel(r'$$\textit{Recall}$$', fontsize=20)
     plt.xlabel(r'$$\textit{Precisi\'on@10}$$', fontsize=20)
-    fig_directory = directoryTopic + base + 'pareto_Pr-Rec_last_gen_run_'+ str(run+1)+'.eps'
+    fig_directory = directoryTopic + base + 'pareto_Pr-Rec_last_gen_run_'+ str(run+1)+'.svg'
     
-    print "fig_dir:", fig_directory
+    print ("fig_dir:", fig_directory)
     
     plt.savefig(fig_directory)
     #plt.show()    

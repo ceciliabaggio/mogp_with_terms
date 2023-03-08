@@ -1,13 +1,9 @@
 #!/bin/bash
 
-# EJEMPLO:
-#./MOGP_PLOTTER_EVOLUTION.bash /home/cecilia/workspace/MOGP_multiple_op_AND_OR_NOT_results/Co1/ /home/cecilia/workspace/MOGP_multiple_op_AND_OR_NOT_results/Co2/ /home/cecilia/workspace/MOGP_multiple_op_AND_OR_NOT_results/Co3/ /home/cecilia/workspace/MOGP_multiple_op_AND_OR_NOT_results/Co4/ /home/cecilia/workspace/MOGP_multiple_op_AND_OR_NOT_results/Co5/ /home/cecilia/workspace/MOGP_multiple_op_AND_OR_NOT_results/Co6/ /home/cecilia/workspace/MOGP_multiple_op_AND_OR_NOT_results/Co7/ /home/cecilia/workspace/MOGP_multiple_op_AND_OR_NOT_results/
-
-
-if [ $# != 8 ]
+if [ $# != 9 ]
 then
-    echo "7 directories needed"
-    echo "usage: MOGP_EVALUATION.bash <dir_Co1> ... <dir_Co6> <dir_Co7> <DIR_TO_SAVE>"
+    echo "8 directories needed"
+    echo "usage: MOGP_EVOLUTION.bash <dir_Co1> ... <dir_Co6> <dir_Co7> <DIR_TO_SAVE>"
     echo ""
     echo "WARNING: <dir_to_read_from> must start and finish with /"
     echo ""
@@ -32,3 +28,9 @@ python "$(pwd)"/MOGP_PLOTTER/plot_avgAvgGlobalRecall_Co1_Co2_Co3_Co4_Co5_Co6.py 
 python "$(pwd)"/MOGP_PLOTTER/plot_avgAvgAvgEntropic_Recall_Co1_Co2_Co3_Co4_Co5_Co6.py $1 $2 $3 $4 $5 $6 $7 $8 
 python "$(pwd)"/MOGP_PLOTTER/plot_avgAvgAvgEntropic_Precision_Co1_Co2_Co3_Co4_Co5_Co6.py $1 $2 $3 $4 $5 $6 $7 $8
 python "$(pwd)"/MOGP_PLOTTER/plot_avgAvgAvg_Recall_Co1_Co2_Co3_Co4_Co5_Co6.py $1 $2 $3 $4 $5 $6 $7 $8
+
+
+# Ejemplo
+#./MOGP_PLOTTER/MOGP_PLOTTER_EVOLUTION.bash /media/cecilia/DISCO2/mogp_with_terms_results/Co1/ /media/cecilia/DISCO2/mogp_with_terms_results/Co2/ /media/cecilia/DISCO2/mogp_with_terms_results/Co3/ /media/cecilia/DISCO2/mogp_with_terms_results/Co4/ /media/cecilia/DISCO2/mogp_with_terms_results/Co5/ /media/cecilia/DISCO2/mogp_with_terms_results/Co6/ /media/cecilia/DISCO2/mogp_with_terms_results/Co7/ /home/cecilia/repos/term_weighting_methods_full_testing_dataset/MOGP/
+
+

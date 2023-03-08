@@ -24,21 +24,24 @@ rc('text', usetex=True)
 
 global lgd
 
+import pandas as pd
+import numpy as np
+
 def plot_avgAvgJaccardSimilarityIndex(directory, combination):
     
     global lgd
     
     
-    print "plotting: ",directory
-    print "combination", combination
+    print("plotting: ",directory)
+    print("combination", combination)
     
     # Get a list of all folders in this folder --> TOPICS    
     
     topic_folders = os.listdir(directory)
     topic_folders.sort()
     
-    print topic_folders
-    print len(topic_folders)
+    print(topic_folders)
+    print (len(topic_folders))
     
     topic_number = 0
     
@@ -49,27 +52,28 @@ def plot_avgAvgJaccardSimilarityIndex(directory, combination):
         # seleccionar los archivos _precision_all_run.txt de cada topico
         # en cada topico deberia haber uno solo, reune todos llos global Recall        
         file_all_run = fnmatch.filter(subfolder, '*_meanJaccardIndex_all_run.txt')[0]
-        print file_all_run
+        print(file_all_run)
         
         name = file_all_run.split('_')
         
         nRuns = int(name[1])
         nGen = int(((name[3]).split('(')[1]).split(')')[0])        
         popSize =  int(((name[4]).split('(')[1]).split(')')[0])
-        print "ngen: ", nGen
-        print "popsize: ",popSize
+        print("ngen: ", nGen)
+        print("popsize: ",popSize)
         
         objectives = name[2]
-        print objectives
+        #print(objectives)
         
         #cada linea ya es el promedio global de la generacion
         avgPrecision_gen_by_run = loadtxt(directory + str(topic) + '/' + file_all_run, unpack=False)
-        print avgPrecision_gen_by_run
+        # es el archivo tal cual se levanta:
+        #print(avgPrecision_gen_by_run)
         
         columns =  len(avgPrecision_gen_by_run[0])
         rows = len(avgPrecision_gen_by_run)
         
-        print "filas",rows, "colus", columns        
+        print("filas",rows, "colus", columns)        
      
         # Jaccard se mide cada 10 generaciones 
         avgAvgPrecision_by_gen_all_run = np.zeros(rows)
@@ -77,8 +81,12 @@ def plot_avgAvgJaccardSimilarityIndex(directory, combination):
         for gen in range(0,rows):
             avgAvgPrecision_by_gen_all_run[gen] = np.mean(avgPrecision_gen_by_run[gen,:])
         
-        print "Precision de cada generacion en TODAS las corridas \n"
-        print avgAvgPrecision_by_gen_all_run
+        print("Jaccard de cada generacion en TODAS las corridas \n")
+        print(avgAvgPrecision_by_gen_all_run)
+
+
+        #arr = np.asarray(avgAvgPrecision_by_gen_all_run)
+        #pd.DataFrame(arr).to_csv(save_dir + topic + '_sample.csv')   
         
         if (topic_number == 0): 
             #creo el arreglo cuando analizo el topico 0, para saber el nGen
@@ -88,8 +96,8 @@ def plot_avgAvgJaccardSimilarityIndex(directory, combination):
         else:
             avgAvgAvgPrecision_Gen_x_Topic[:,topic_number] = avgAvgPrecision_by_gen_all_run[:]
         
-        print "precision generacion x topico"
-        print avgAvgAvgPrecision_Gen_x_Topic    
+        print("precision generacion x topico")
+        print(avgAvgAvgPrecision_Gen_x_Topic)
         topic_number+=1
     
     #===========================================================================
@@ -108,19 +116,22 @@ def plot_avgAvgJaccardSimilarityIndex(directory, combination):
     
     gen = [i for i in range(0,nGen)]
         
-    x = gen[0:(len(gen)-1):10] 
+    x = gen[0:(len(gen)-1):5] # vector de cada 5 generaciones
+    #x = [i for i in range(0,nGen)]   
+
     #M_TopicxGen = avgAvgAvgPrecision_Gen_x_Topic.transpose()
-    
+
     #list_of_mean: cada indice es una generacion. Promedio sobre todos los topicos
     
     list_of_mean = np.zeros(len(x))
     for g in range(0, len(x)):
         
-        list_of_mean[g] = np.mean(avgAvgAvgPrecision_Gen_x_Topic[g,:])
+        list_of_mean[g] = np.mean(avgAvgAvgPrecision_Gen_x_Topic[x[g],:])   # aca estaba el error del plot. Se hacia con "g" (posicion del arreglo) y no con x[g]
+                                                                            # asi que las curvas estaban desplazadas
     
-    print len(list_of_mean)
-    print len(x)
-    print x
+    print(len(list_of_mean))
+    print(len(x))
+    print(x)
 
     if (combination == 1):                
         plt.scatter(x, list_of_mean, c='#007FAE', marker = 'o', linewidth = 0.7, label= 'Co1', alpha=0.7)
@@ -171,13 +182,13 @@ def plot_avgAvgJaccardSimilarityIndex(directory, combination):
 
     # puede funcionar
     lgd = ax.legend(loc='center right', bbox_to_anchor=(1.18, 0.7), 
-          ncol=1, fancybox=True, shadow=False)
+          ncol=1, fancybox=True, shadow=True)
     
     plt.rc('text', usetex=True)
     plt.rc('font', family='serif')  
 
-    plt.xlabel(r'$$\textit{Generaciones}$$', fontsize=14)
-    plt.ylabel(r'$$\overline{\textit{\'Indice-Similitud-jaccard}}$$', fontsize=14)
+    plt.xlabel(r'$$\textit{Generations}$$', fontsize=20)
+    plt.ylabel(r'$$\overline{\overline{\textit{J-Similarity}}}$$', fontsize=20)
      
              
     return
@@ -203,16 +214,26 @@ if len(sys.argv) == 9:
             plot_avgAvgJaccardSimilarityIndex(combinations_dir[i], i+1)
                 
     #plt.savefig(save_dir + "evolution_JaccardSimilarityIndex.pdf")
-    plt.savefig(save_dir + "evolution_JaccardSimilarityIndex-terms.pdf", bbox_extra_artists=(lgd,), bbox_inches='tight')
+    plt.savefig(save_dir + "evolution_JaccardSimilarityIndex-terms.svg", bbox_extra_artists=(lgd,), bbox_inches='tight')
     #plt.show()
                   
 else:
-    print "debe ingresar los directorios de donde leer y el dir donde GUARDAR FIGURAS"
-    print " "
-    print "Ejemplo: python plot_avgAvgAvgGlobalRecall_Co1_Co2_Co3_Co4_Co5_Co6 \
-    /home/.../Co1/ /home/.../Co2/  ... <SAVE_DIR>"
-    print 'Si alguna combinacion no esta, ingresar "" (cadena vacia) en su lugar ' 
+    print("debe ingresar los directorios de donde leer y el dir donde GUARDAR FIGURAS")
+    print(" ")
+    print("Ejemplo: python plot_avgAvgAvgGlobalRecall_Co1_Co2_Co3_Co4_Co5_Co6 \
+    /home/.../Co1/ /home/.../Co2/  ... <SAVE_DIR>")
+    print('Si alguna combinacion no esta, ingresar "" (cadena vacia) en su lugar ' )
+    
+    print(str(sys.argv[1]))
+    print(str(sys.argv[2]))
+    print(str(sys.argv[3]))
+    print(str(sys.argv[4]))
+    print(str(sys.argv[5]))
+    print(str(sys.argv[6]))
+    print(str(sys.argv[7]))
+    print(str(sys.argv[8]))
 
+    
     sys.exit()
     
 

@@ -32,16 +32,16 @@ def plot_avgAvgAvgPrecision_at_10(directory, combination):
     global lgd
     
     
-    print "plotting: ",directory
-    print "combination", combination
+    print("plotting: ",directory)
+    print("combination", combination)
     
     # Get a list of all folders in this folder --> TOPICS    
     
     topic_folders = os.listdir(directory)
     topic_folders.sort()
     
-    print topic_folders
-    print len(topic_folders)
+    print(topic_folders)
+    print(len(topic_folders))
     
     topic_number = 0
     
@@ -52,25 +52,25 @@ def plot_avgAvgAvgPrecision_at_10(directory, combination):
         # seleccionar los archivos _precision_all_run.txt de cada topico
         # en cada topico deberia haber uno solo, reune todas las precisiones        
         file_all_run = fnmatch.filter(subfolder, '*_precision_all_run.txt')[0]
-        print file_all_run
+        print(file_all_run)
         
         name = file_all_run.split('_')
         
         nRuns = int(name[1])
         nGen = int(((name[3]).split('(')[1]).split(')')[0])        
         popSize =  int(((name[4]).split('(')[1]).split(')')[0])
-        print "ngen: ", nGen
-        print "popsize: ",popSize
+        print("ngen: ", nGen)
+        print("popsize: ",popSize)
         
         objectives = name[2]
-        print objectives
+        print(objectives)
         
         lines = loadtxt(directory + str(topic) + '/' + file_all_run, unpack=False)
-        print lines
+        print(lines)
         columns =  len(lines[0])
         rows = len(lines)
         
-        print "filas",rows, "colus", columns
+        print("filas",rows, "colus", columns)
         
         avgPrecision_gen_by_run = np.zeros((nGen, nRuns))  
             
@@ -82,16 +82,16 @@ def plot_avgAvgAvgPrecision_at_10(directory, combination):
                 avgPrecision_gen_by_run[g,r] = np.mean(lines[base:top, r], dtype=np.float)
                 base+=popSize
         
-        print "generaciones X corridas \n"       
-        print avgPrecision_gen_by_run
+        print("generaciones X corridas \n")
+        print(avgPrecision_gen_by_run)
     
         avgAvgPrecision_by_gen_all_run = np.zeros(nGen)
         
         for gen in range(0,nGen):
             avgAvgPrecision_by_gen_all_run[gen] = np.mean(avgPrecision_gen_by_run[gen,:])
         
-        print "Precision de cada generacion en TODAS las corridas \n"
-        print avgAvgPrecision_by_gen_all_run
+        print("Precision de cada generacion en TODAS las corridas \n")
+        print(avgAvgPrecision_by_gen_all_run)
         
         if (topic_number == 0): 
             #creo el arreglo cuando analizo el topico 0, para saber el nGen
@@ -101,8 +101,8 @@ def plot_avgAvgAvgPrecision_at_10(directory, combination):
         else:
             avgAvgAvgPrecision_Gen_x_Topic[:,topic_number] = avgAvgPrecision_by_gen_all_run[:]
         
-        print "precision generacion x topico"
-        print avgAvgAvgPrecision_Gen_x_Topic    
+        print("precision generacion x topico")
+        print(avgAvgAvgPrecision_Gen_x_Topic)
         topic_number+=1
     
     #===========================================================================
@@ -130,9 +130,9 @@ def plot_avgAvgAvgPrecision_at_10(directory, combination):
         
         list_of_mean[g] = np.mean(avgAvgAvgPrecision_Gen_x_Topic[g,:])
     
-    print len(list_of_mean)
-    print len(x)
-    print x
+    print(len(list_of_mean))
+    print(len(x))
+    print(x)
     
     alph=0.6
      
@@ -179,6 +179,7 @@ def plot_avgAvgAvgPrecision_at_10(directory, combination):
     minor_ticks = np.arange(0, 1, 0.05)
     ax.set_yticks(major_ticks)
     ax.set_yticks(minor_ticks, minor=True)
+    
      
     # # And a corresponding grid
     ax.grid(which='both')
@@ -191,15 +192,18 @@ def plot_avgAvgAvgPrecision_at_10(directory, combination):
 
     # puede funcionar
     lgd = ax.legend(loc='center right', bbox_to_anchor=(1.18, 0.7), 
-          ncol=1, fancybox=True, shadow=False)
+          ncol=1, fancybox=True, shadow=True)
   
     
     plt.rc('text', usetex=True)
     plt.rc('font', family='serif')     
-    plt.xlabel(r'$$\textit{Generaciones}$$', fontsize=14)   
-    plt.ylabel(r'$$\overline{\overline{\textit{Precisi\'on@10}}}$$', fontsize=14)
-     
-                 
+    plt.xlabel(r'$$\textit{Generations}$$', fontsize=20)   
+    plt.ylabel(r'$$\overline{\overline{\textit{Precision@10}}}$$', fontsize=20)
+
+    # Set the legend font size
+    # plt.rc('legend', fontsize=14)
+
+
     return
 
 # Invocacion del script    
@@ -225,16 +229,16 @@ if len(sys.argv) == 9:
         if combinations_dir[i]:        
             plot_avgAvgAvgPrecision_at_10(combinations_dir[i], i+1)
                 
-    plt.savefig(save_dir +"evolution_precision@10-terms.pdf", bbox_extra_artists=(lgd,), bbox_inches='tight')
-    
+    plt.savefig(save_dir +"evolution_precision@10-terms.svg", bbox_extra_artists=(lgd,), bbox_inches='tight')
+  
     
                   
 else:
-    print "debe ingresar los directorios de donde leer y el dir donde GUARDAR FIGURAS"
-    print " "
-    print "Ejemplo: python plot_avgAvgAvgPrecision_at_10_Co1_Co2_Co3_Co4_Co5_Co6 \
-    /home/.../Co1/ /home/.../Co2/  ... <SAVE_DIR>"
-    print 'Si alguna combinacion no esta, ingresar "" (cadena vacia) en su lugar ' 
+    print("debe ingresar los directorios de donde leer y el dir donde GUARDAR FIGURAS")
+    print(" ")
+    print("Ejemplo: python plot_avgAvgAvgPrecision_at_10_Co1_Co2_Co3_Co4_Co5_Co6 \
+    /home/.../Co1/ /home/.../Co2/  ... <SAVE_DIR>")
+    print('Si alguna combinacion no esta, ingresar "" (cadena vacia) en su lugar ' )
 
     sys.exit()
     

@@ -21,13 +21,13 @@ if len(sys.argv) == 4:
     directory = str(sys.argv[1])
     comb = sys.argv[2]
     popsize = int(sys.argv[3])
-    print directory, 'combination  = ', comb
+    print (directory, 'combination  = ', comb)
     
 else:
-    print "debe ingresar el directorio de la combinacion desde donde leer"
-    print " "
-    print "Ejemplo: python \
-generar_pretos_Pr_Rec.py  /home/Cecilia/workspace/.../Co5/215/ <COMBINACION> <POPSIZE>"
+    print ("debe ingresar el directorio de la combinacion desde donde leer")
+    print (" ")
+    print ("Ejemplo: python \
+generar_pretos_Pr_Rec.py  /home/Cecilia/workspace/.../Co5/215/ <COMBINACION> <POPSIZE>")
     sys.exit()
     
 subdir = os.listdir(directory)
@@ -49,7 +49,7 @@ subdir = os.listdir(directory)
 ###    
 topic = '529'
 topic_url = directory + topic + '/' 
-print "Generating Pareto front LAST Gen - ", topic_url
+print ("Generating Pareto front LAST Gen - ", topic_url)
 os.system('python pareto_PRECISION_RECALL.py %d "%s" "%s"'% (popsize, topic_url, comb))
-print "Generating Pareto front FIRST Gen - ", topic_url
+print ("Generating Pareto front FIRST Gen - ", topic_url)
 os.system('python pareto_PRECISION_RECALL_1st.py %d "%s" "%s"'% (popsize, topic_url, comb))      

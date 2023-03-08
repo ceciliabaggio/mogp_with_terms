@@ -35,14 +35,14 @@ def NORMFIT_CI_1st_and_last_gen_GLOBAL_RECALL(directory):
         globalRecall_by_topic = loadtxt(directory + 
                     'Co1_MEAN_GLOBAL_RECALL_FROM_TESTING_ALL_TOPICS_GEN_1.txt', 
                     unpack=False)
-        print globalRecall_by_topic        
+        print (globalRecall_by_topic)        
         mean = np.mean(globalRecall_by_topic)               
         """ Usando desvio estandar -->  FORMULA DE ANA """        
         desvio = np.std(globalRecall_by_topic)
-        print desvio
+        print (desvio)
         error =  desvio * 1.96 / math.sqrt(len(globalRecall_by_topic))          
         co1_first = plt.errorbar(1, mean, yerr=error,  c='#007FAE', 
-                    marker = 'o', linewidth = 1, alpha=0.5, capsize=4)  
+                    marker = 'o', linewidth = 1, fillstyle='none', capsize=4, markersize=15)  
                     #capsize: ancho de barras de error
 
     if ('Co2_MEAN_GLOBAL_RECALL_FROM_TESTING_ALL_TOPICS_GEN_1.txt' in files_in_dir):
@@ -51,11 +51,11 @@ def NORMFIT_CI_1st_and_last_gen_GLOBAL_RECALL(directory):
                     unpack=False)
         mean = np.mean(globalRecall_by_topic)            
         desvio = np.std(globalRecall_by_topic)
-        print globalRecall_by_topic
-        print desvio
+        print (globalRecall_by_topic)
+        print (desvio)
         error =  desvio * 1.96 / math.sqrt(len(globalRecall_by_topic))
         co2_first = plt.errorbar(2 , mean, yerr=error, c='#00BDBD', 
-                    marker = 'd', linewidth = 1, alpha=0.5, capsize=4)
+                    marker = 'd', linewidth = 1, fillstyle='none', capsize=4, markersize=15)
 
     if ('Co3_MEAN_GLOBAL_RECALL_FROM_TESTING_ALL_TOPICS_GEN_1.txt' in files_in_dir):
         globalRecall_by_topic = loadtxt(directory + 
@@ -63,11 +63,11 @@ def NORMFIT_CI_1st_and_last_gen_GLOBAL_RECALL(directory):
                     unpack=False)         
         mean = np.mean(globalRecall_by_topic)        
         desvio = np.std(globalRecall_by_topic)
-        print globalRecall_by_topic
-        print desvio
+        print (globalRecall_by_topic)
+        print (desvio)
         error =  desvio * 1.96 / math.sqrt(len(globalRecall_by_topic))
         co3_first = plt.errorbar(3 , mean, yerr=error, c='#FF6600', 
-                    marker = '>', linewidth = 1, alpha=0.5, capsize=4)
+                    marker = '>', linewidth = 1, fillstyle='none', capsize=4, markersize=15)
         
     if ('Co4_MEAN_GLOBAL_RECALL_FROM_TESTING_ALL_TOPICS_GEN_1.txt' in files_in_dir):
         globalRecall_by_topic = loadtxt(directory + 
@@ -75,11 +75,11 @@ def NORMFIT_CI_1st_and_last_gen_GLOBAL_RECALL(directory):
                     unpack=False)         
         mean = np.mean(globalRecall_by_topic)        
         desvio = np.std(globalRecall_by_topic)
-        print globalRecall_by_topic
-        print desvio
+        print (globalRecall_by_topic)
+        print (desvio)
         error =  desvio * 1.96 / math.sqrt(len(globalRecall_by_topic))     
         co4_first = plt.errorbar(4 , mean, yerr=error,  c='#8BAD00',
-                    marker = 's', linewidth = 1, alpha=0.5, capsize=4)
+                    marker = 's', linewidth = 1, fillstyle='none', capsize=4, markersize=15)
         
     if ('Co5_MEAN_GLOBAL_RECALL_FROM_TESTING_ALL_TOPICS_GEN_1.txt' in files_in_dir):
         globalRecall_by_topic = loadtxt(directory + 
@@ -87,11 +87,11 @@ def NORMFIT_CI_1st_and_last_gen_GLOBAL_RECALL(directory):
                     unpack=False)         
         mean = np.mean(globalRecall_by_topic)        
         desvio = np.std(globalRecall_by_topic)
-        print globalRecall_by_topic
-        print desvio
+        print (globalRecall_by_topic)
+        print (desvio)
         error =  desvio * 1.96 / math.sqrt(len(globalRecall_by_topic))     
         co5_first = plt.errorbar(5 , mean, yerr=error,   c='#7F3300',
-                    marker = r'$\clubsuit$', linewidth = 1, alpha=0.5, capsize=4)
+                    marker = r'$\clubsuit$', linewidth = 1, fillstyle='none', capsize=4, markersize=15)
 
     if ('Co6_MEAN_GLOBAL_RECALL_FROM_TESTING_ALL_TOPICS_GEN_1.txt' in files_in_dir):
         globalRecall_by_topic = loadtxt(directory + 
@@ -99,11 +99,11 @@ def NORMFIT_CI_1st_and_last_gen_GLOBAL_RECALL(directory):
                     unpack=False)         
         mean = np.mean(globalRecall_by_topic)        
         desvio = np.std(globalRecall_by_topic)
-        print globalRecall_by_topic
-        print desvio
+        print (globalRecall_by_topic)
+        print (desvio)
         error =  desvio * 1.96 / math.sqrt(len(globalRecall_by_topic))     
         co6_first = plt.errorbar(6 , mean, yerr=error,  c='#006400',        
-                    marker = 'X', linewidth = 1, alpha=0.5, capsize=4)
+                    marker = 'X', linewidth = 1, fillstyle='none', capsize=4, markersize=15)
         
     if ('Co7_MEAN_GLOBAL_RECALL_FROM_TESTING_ALL_TOPICS_GEN_1.txt' in files_in_dir):
         globalRecall_by_topic = loadtxt(directory+ 
@@ -111,14 +111,14 @@ def NORMFIT_CI_1st_and_last_gen_GLOBAL_RECALL(directory):
                     unpack=False)         
         mean = np.mean(globalRecall_by_topic)        
         desvio = np.std(globalRecall_by_topic)
-        print globalRecall_by_topic
-        print desvio
+        print (globalRecall_by_topic)
+        print (desvio)
         error =  desvio * 1.96 / math.sqrt(len(globalRecall_by_topic))     
         co7_first = plt.errorbar(7 , mean, yerr=error,  c='#ff6347',
-                    marker = '*', linewidth = 1, alpha=0.5, capsize=4)
+                    marker = '*', linewidth = 1, fillstyle='none', capsize=4, markersize=15)
 
     """ PARA PRUEBA """
-    #co6_first = plt.errorbar(6 , mean, yerr=error,  c='green', marker = r'$\bowtie$', linewidth = 1,  alpha=0.5, capsize=4)
+    #co6_first = plt.errorbar(6 , mean, yerr=error,  c='green', marker = r'$\bowtie$', linewidth = 1,  fillstyle='none', capsize=4, markersize=15)
             
     #===========================================================================
     # LAST_GEN
@@ -128,14 +128,14 @@ def NORMFIT_CI_1st_and_last_gen_GLOBAL_RECALL(directory):
         globalRecall_by_topic = loadtxt(directory + 
                     'Co1_MEAN_GLOBAL_RECALL_FROM_TESTING_ALL_TOPICS_LAST_GEN.txt', 
                     unpack=False)
-        print globalRecall_by_topic        
+        print (globalRecall_by_topic)        
         mean = np.mean(globalRecall_by_topic)               
         """ Usando desvio estandar -->  FORMULA DE ANA """        
         desvio = np.std(globalRecall_by_topic)
-        print desvio
+        print (desvio)
         error =  desvio * 1.96 / math.sqrt(len(globalRecall_by_topic))          
         co1_last = plt.errorbar(1, mean, yerr=error,  c='#007FAE', 
-                    marker = 'o', linewidth = 1, alpha=1, capsize=4)  
+                    marker = 'o', linewidth = 1, alpha=1, capsize=4, markersize=15)  
                     #capsize: ancho de barras de error
 
     if ('Co2_MEAN_GLOBAL_RECALL_FROM_TESTING_ALL_TOPICS_LAST_GEN.txt' in files_in_dir):
@@ -144,11 +144,11 @@ def NORMFIT_CI_1st_and_last_gen_GLOBAL_RECALL(directory):
                     unpack=False)
         mean = np.mean(globalRecall_by_topic)            
         desvio = np.std(globalRecall_by_topic)
-        print globalRecall_by_topic
-        print desvio
+        print (globalRecall_by_topic)
+        print (desvio)
         error =  desvio * 1.96 / math.sqrt(len(globalRecall_by_topic))
         co2_last = plt.errorbar(2 , mean, yerr=error, c='#00BDBD', 
-                    marker = 'd', linewidth = 1, alpha=1, capsize=4)
+                    marker = 'd', linewidth = 1, alpha=1, capsize=4, markersize=15)
 
     if ('Co3_MEAN_GLOBAL_RECALL_FROM_TESTING_ALL_TOPICS_LAST_GEN.txt' in files_in_dir):
         globalRecall_by_topic = loadtxt(directory+ 
@@ -156,11 +156,11 @@ def NORMFIT_CI_1st_and_last_gen_GLOBAL_RECALL(directory):
                     unpack=False)         
         mean = np.mean(globalRecall_by_topic)        
         desvio = np.std(globalRecall_by_topic)
-        print globalRecall_by_topic
-        print desvio
+        print (globalRecall_by_topic)
+        print (desvio)
         error =  desvio * 1.96 / math.sqrt(len(globalRecall_by_topic))
         co3_last = plt.errorbar(3 , mean, yerr=error, c='#FF6600', 
-                    marker = '>', linewidth = 1, alpha=1, capsize=4)
+                    marker = '>', linewidth = 1, alpha=1, capsize=4, markersize=15)
         
     if ('Co4_MEAN_GLOBAL_RECALL_FROM_TESTING_ALL_TOPICS_LAST_GEN.txt' in files_in_dir):
         globalRecall_by_topic = loadtxt(directory+ 
@@ -168,11 +168,11 @@ def NORMFIT_CI_1st_and_last_gen_GLOBAL_RECALL(directory):
                     unpack=False)         
         mean = np.mean(globalRecall_by_topic)        
         desvio = np.std(globalRecall_by_topic)
-        print globalRecall_by_topic
-        print desvio
+        print (globalRecall_by_topic)
+        print (desvio)
         error =  desvio * 1.96 / math.sqrt(len(globalRecall_by_topic))     
         co4_last = plt.errorbar(4 , mean, yerr=error,  c='#8BAD00',
-                    marker = 's', linewidth = 1, alpha=1, capsize=4)
+                    marker = 's', linewidth = 1, alpha=1, capsize=4, markersize=15)
         
     if ('Co5_MEAN_GLOBAL_RECALL_FROM_TESTING_ALL_TOPICS_LAST_GEN.txt' in files_in_dir):
         globalRecall_by_topic = loadtxt(directory+ 
@@ -180,11 +180,11 @@ def NORMFIT_CI_1st_and_last_gen_GLOBAL_RECALL(directory):
                     unpack=False)         
         mean = np.mean(globalRecall_by_topic)        
         desvio = np.std(globalRecall_by_topic)
-        print globalRecall_by_topic
-        print desvio
+        print (globalRecall_by_topic)
+        print (desvio)
         error =  desvio * 1.96 / math.sqrt(len(globalRecall_by_topic))             
         co5_last = plt.errorbar(5 , mean, yerr=error,   c='#7F3300',
-                    marker = r'$\clubsuit$', linewidth = 1, alpha=1, capsize=4)
+                    marker = r'$\clubsuit$', linewidth = 1, alpha=1, capsize=4, markersize=15)
 
     if ('Co6_MEAN_GLOBAL_RECALL_FROM_TESTING_ALL_TOPICS_LAST_GEN.txt' in files_in_dir):
         globalRecall_by_topic = loadtxt(directory+ 
@@ -192,11 +192,11 @@ def NORMFIT_CI_1st_and_last_gen_GLOBAL_RECALL(directory):
                     unpack=False)         
         mean = np.mean(globalRecall_by_topic)        
         desvio = np.std(globalRecall_by_topic)
-        print globalRecall_by_topic
-        print desvio
+        print (globalRecall_by_topic)
+        print (desvio)
         error =  desvio * 1.96 / math.sqrt(len(globalRecall_by_topic))     
         co6_last = plt.errorbar(6 , mean, yerr=error,  c='#006400',
-                    marker = 'X', linewidth = 1, alpha=1, capsize=4)
+                    marker = 'X', linewidth = 1, alpha=1, capsize=4, markersize=15)
         
     if ('Co7_MEAN_GLOBAL_RECALL_FROM_TESTING_ALL_TOPICS_LAST_GEN.txt' in files_in_dir):
         globalRecall_by_topic = loadtxt(directory+ 
@@ -204,12 +204,12 @@ def NORMFIT_CI_1st_and_last_gen_GLOBAL_RECALL(directory):
                     unpack=False)         
         mean = np.mean(globalRecall_by_topic)        
         desvio = np.std(globalRecall_by_topic)
-        print globalRecall_by_topic
-        print desvio
+        print (globalRecall_by_topic)
+        print (desvio)
         error =  desvio * 1.96 / math.sqrt(len(globalRecall_by_topic))             
-        co7_last = plt.errorbar(7 , mean, yerr=error,  c='#ff6347', marker = '*', linewidth = 1, alpha=1, capsize=4)
+        co7_last = plt.errorbar(7 , mean, yerr=error,  c='#ff6347', marker = '*', linewidth = 1, alpha=1, capsize=4, markersize=15)
     """ PARA PRUEBA """
-    #co6_last = plt.errorbar(6 , mean, yerr=error,  c='green', marker = r'$\bowtie$', linewidth = 1,  alpha=1, capsize=4)
+    #co6_last = plt.errorbar(6 , mean, yerr=error,  c='green', marker = r'$\bowtie$', linewidth = 1,  alpha=1, capsize=4, markersize=15)
             
          
     plt.rc('text', usetex=True)
@@ -222,9 +222,9 @@ def NORMFIT_CI_1st_and_last_gen_GLOBAL_RECALL(directory):
     #            (co5_first, co5_last), (co6_first, co6_last),
     #            (co7_first, co7_last)], labels)
     
-    plt.xlabel(r'$$\textit{Combinaciones}$$', fontsize=14)
-    plt.ylabel(r'$$\overline{\textit{Recall-Global}}$$', fontsize=14)       
-    plt.xticks([1, 2, 3, 4, 5, 6, 7], labels, rotation='vertical') 
+    plt.xlabel(r'$$\textit{Combinations}$$', fontsize=20)
+    plt.ylabel(r'$$\overline{\textit{Global-Recall}}$$', fontsize=20)       
+    plt.xticks([1, 2, 3, 4, 5, 6, 7], labels, rotation='horizontal') 
     
     return
 
@@ -233,14 +233,14 @@ if len(sys.argv) == 2:
     save_dir= str(sys.argv[1])    
     fig = plt.figure()    
     NORMFIT_CI_1st_and_last_gen_GLOBAL_RECALL(save_dir)                
-    plt.savefig(save_dir+ "TESTING_CI_Global_Recall-terms.pdf")
+    plt.savefig(save_dir+ "TESTING_CI_Global_Recall-terms.svg")
     #plt.show()
                   
 else:
-    print "debe ingresar los directorios de donde leer. Debe contener los archivos"
-    print "del tipo Co1_MEAN_GLOBAL_RECALL_FROM_TESTING_ALL_TOPICS_LAST_GEN"
-    print " "
-    print "Ejemplo: python NORMFIT_CI_1st_and_last_gen_GLOBAL_RECALL \
-    </home/cecilia/workspace/MOGP_multiple_op_AND_OR_NOT_results>"
+    print ("debe ingresar los directorios de donde leer. Debe contener los archivos")
+    print ("del tipo Co1_MEAN_GLOBAL_RECALL_FROM_TESTING_ALL_TOPICS_LAST_GEN")
+    print (" ")
+    print ("Ejemplo: python NORMFIT_CI_1st_and_last_gen_GLOBAL_RECALL \
+    </home/cecilia/workspace/MOGP_multiple_op_AND_OR_NOT_results>")
      
     sys.exit()
