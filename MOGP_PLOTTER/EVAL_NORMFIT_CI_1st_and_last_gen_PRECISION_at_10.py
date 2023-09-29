@@ -228,6 +228,13 @@ def NORMFIT_CI_1st_and_last_gen_PRECISION(directory):
     
     plt.rc('text', usetex=True)
     plt.rc('font', family='serif')
+    
+    # Set the legend font size
+    plt.rc('legend', fontsize=14)
+        
+    # Set the font size of xticks
+    plt.xticks(fontsize=20)
+    plt.yticks(fontsize=20)
             
     plt.xlabel(r'$$\textit{Combinations}$$', fontsize=20)
     plt.ylabel(r'$$\overline{\overline{\textit{Precision@10}}}$$', fontsize=20)    

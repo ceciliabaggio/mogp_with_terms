@@ -172,15 +172,14 @@ def plot_avgAvgAvgPrecision_at_10(directory, combination):
     major_ticks = np.arange(0, 150, 20)
     minor_ticks = np.arange(0, 150, 5)
     
-    ax.set_xticks(major_ticks)
-    ax.set_xticks(minor_ticks, minor=True)
+    ax.set_xticks(major_ticks, fontsize=20)
+    ax.set_xticks(minor_ticks, minor=True, fontsize=20)
     
     major_ticks = np.arange(0, 1, 0.2)
     minor_ticks = np.arange(0, 1, 0.05)
     ax.set_yticks(major_ticks)
     ax.set_yticks(minor_ticks, minor=True)
-    
-     
+           
     # # And a corresponding grid
     ax.grid(which='both')
     
@@ -194,14 +193,26 @@ def plot_avgAvgAvgPrecision_at_10(directory, combination):
     lgd = ax.legend(loc='center right', bbox_to_anchor=(1.18, 0.7), 
           ncol=1, fancybox=True, shadow=True)
   
+    # Set the font size of xticks
+    plt.xticks(fontsize=20)
+    plt.yticks(fontsize=20)
+        
     
+    # Set the legend font size
+    plt.rc('legend', fontsize=14)
+    
+    # set legend outside plot
+    #plt.legend(loc=(1.04, 0), fancybox=True, shadow=True)
+    
+    #plt.legend(loc='upper center',
+    #      ncol=1, fancybox=True, shadow=True)
+
     plt.rc('text', usetex=True)
     plt.rc('font', family='serif')     
     plt.xlabel(r'$$\textit{Generations}$$', fontsize=20)   
     plt.ylabel(r'$$\overline{\overline{\textit{Precision@10}}}$$', fontsize=20)
-
-    # Set the legend font size
-    # plt.rc('legend', fontsize=14)
+    
+    
 
 
     return

@@ -193,6 +193,13 @@ def plot_avgAvgGlobalRecall(directory, combination):
     lgd = ax.legend(loc='center right', bbox_to_anchor=(1.18, 0.7), 
           ncol=1, fancybox=True, shadow=True)
     
+    # Set the legend font size
+    plt.rc('legend', fontsize=14)
+        
+    # Set the font size of xticks
+    plt.xticks(fontsize=20)
+    plt.yticks(fontsize=20)
+
     plt.rc('text', usetex=True)
     plt.rc('font', family='serif')  
     plt.xlabel(r'$$\textit{Generations}$$', fontsize=20)

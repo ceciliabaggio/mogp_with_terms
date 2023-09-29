@@ -221,6 +221,13 @@ def NORMFIT_CI_1st_and_last_gen_GLOBAL_RECALL(directory):
     #            (co3_first, co3_last), (co4_first, co4_last), 
     #            (co5_first, co5_last), (co6_first, co6_last),
     #            (co7_first, co7_last)], labels)
+
+     # Set the legend font size
+    plt.rc('legend', fontsize=14)
+        
+    # Set the font size of xticks
+    plt.xticks(fontsize=20)
+    plt.yticks(fontsize=20)          
     
     plt.xlabel(r'$$\textit{Combinations}$$', fontsize=20)
     plt.ylabel(r'$$\overline{\textit{Global-Recall}}$$', fontsize=20)       
