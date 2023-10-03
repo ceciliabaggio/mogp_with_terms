@@ -213,16 +213,22 @@ for run in range(0,nRuns):
     plt.axis([0, 1, 0, 1], )
     
     plt.grid(True)
+    plt.rc('legend', fontsize=16)
     #plt.legend() 
     plt.legend()
     
+    # Set the font size of xticks
+    plt.xticks(fontsize=20)
+    plt.yticks(fontsize=20)
+    
     plt.ylabel(r'$$\textit{Recall}$$', fontsize=20)
-    plt.xlabel(r'$$\textit{Precisi\'on@10}$$', fontsize=20)
+    plt.xlabel(r'$$\textit{Precision@10}$$', fontsize=20)
     fig_directory = directoryTopic + base + 'pareto_Pr-Rec_last_gen_run_'+ str(run+1)+'.svg'
     
     print ("fig_dir:", fig_directory)
     
     plt.savefig(fig_directory)
+    #plt.savefig('/home/cecilia/repos/mogp_with_terms/mogp_plots/'+ base + 'pareto_Pr-Rec_last_gen_run_'+ str(run+1)+'.svg' )
     #plt.show()    
         
 

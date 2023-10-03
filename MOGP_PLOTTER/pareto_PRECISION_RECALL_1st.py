@@ -184,8 +184,8 @@ for run in range(0,nRuns):
         plt.plot(p_front_Xs, p_front_Ys, c='#00BDBD')
     elif (combination in ['3']):
         # Plot a scatter graph of all results
-        #plt.scatter(Xs_precision, Ys_recall, c='#FF6600', marker = '<', s=65,linewidths = 1, alpha=0.5, facecolor = '#FF6600', label= 'Initial Population')
-        plt.scatter(Xs_precision, Ys_recall, c='#FF6600', marker = '<', s=65,linewidths = 1, alpha=0.5, facecolor = '#FF6600', label= 'Co3')
+        plt.scatter(Xs_precision, Ys_recall, c='#FF6600', marker = '<', s=65,linewidths = 1, alpha=0.5, facecolor = '#FF6600', label= 'Initial Population')
+        #plt.scatter(Xs_precision, Ys_recall, c='#FF6600', marker = '<', s=65,linewidths = 1, alpha=0.5, facecolor = '#FF6600', label= 'Co3')
         # Then plot the Pareto frontier on top
         plt.plot(p_front_Xs, p_front_Ys, c='#FF6600')
     elif (combination in ['4']):
@@ -212,18 +212,26 @@ for run in range(0,nRuns):
                     
      
     plt.axis([0, 1, 0, 1], )
+
     
     plt.grid(True)
-    #plt.legend() 
+        
+    # Set the legend font size
+    plt.rc('legend', fontsize=16)
     plt.legend()
+   
+    # Set the font size of xticks
+    plt.xticks(fontsize=20)
+    plt.yticks(fontsize=20)
     
-    plt.ylabel(r'$$\textit{Recall}$$', fontsize=20)
-    plt.xlabel(r'$$\textit{Precisi\'on@10}$$', fontsize=20)
+    plt.ylabel(r'$$Recall$$', fontsize=20)
+    plt.xlabel(r'$$Precision@10$$', fontsize=20)
     fig_directory = directoryTopic + base + 'pareto_Pr-Rec_first_gen_run_'+ str(run+1)+'.svg'
     
     print ("fig_dir:", fig_directory)
     
     plt.savefig(fig_directory)
+    #plt.savefig('/home/cecilia/repos/mogp_with_terms/mogp_plots/'+ base + 'pareto_Pr-Rec_first_gen_run_'+ str(run+1)+'.svg')
     #plt.show()    
         
 
