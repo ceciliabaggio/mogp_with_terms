@@ -231,7 +231,7 @@ def NORMFIT_CI_1st_and_last_gen_GLOBAL_JACCARD(directory):
     plt.yticks(fontsize=20)
                 
     plt.xlabel(r'$$\textit{Combinations}$$', fontsize=20)
-    plt.ylabel(r'$$\overline{\overline{\textit{J-Similarity}}}$$', fontsize=20)    
+    plt.ylabel(r'$$\overline{\overline{\textit{Jaccard-Similarity}}}$$', fontsize=20)    
     plt.xticks([1, 2, 3, 4, 5, 6, 7], labels, rotation='horizontal') 
     
     return

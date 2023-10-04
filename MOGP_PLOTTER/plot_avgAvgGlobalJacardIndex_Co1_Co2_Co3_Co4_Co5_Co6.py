@@ -195,7 +195,7 @@ def plot_avgAvgJaccardSimilarityIndex(directory, combination):
     plt.rc('font', family='serif')  
 
     plt.xlabel(r'$$\textit{Generations}$$', fontsize=20)
-    plt.ylabel(r'$$\overline{\overline{\textit{J-Similarity}}}$$', fontsize=20)
+    plt.ylabel(r'$$\overline{\overline{\textit{Jaccard-Similarity}}}$$', fontsize=20)
      
              
     return
