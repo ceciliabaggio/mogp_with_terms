@@ -40,11 +40,12 @@ The core of the system is in file: MOGPqueryReformulation.py
 
 Lucene indexes and the DMOZ dataset are not on gitHub. 
 
-You can rebuild the index using the Indexer code, that is in the Index directory.
-
 The Dataset has been published here: https://data.mendeley.com/datasets/9mpgz8z257/1
 
-Otherwise, please write me an email (cb@cs.uns.edu.ar) and I will be glad to send the index to you :)
+The Index to retrieve the DMOZ documents is available through the Zenodo DOI: 10.5281/zenodo.10027030
+
+Otherwise, you can rebuild the index using the Indexer code, that is in the Index directory.
+
 
 ---
 PyLucene 4.9.0 - Java openjdk-7-jdk - 
