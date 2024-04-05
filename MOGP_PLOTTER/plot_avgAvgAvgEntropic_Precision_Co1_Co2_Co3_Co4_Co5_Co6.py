@@ -219,7 +219,8 @@ if len(sys.argv) == 9:
             plot_avgAvgAvgPrecision_at_10(combinations_dir[i], i+1)
                 
     #plt.savefig(save_dir + "evolution_entropicPrecision.pdf")
-    plt.savefig(save_dir + "evolution_entropicPrecision-terms.svg", bbox_extra_artists=(lgd,), bbox_inches='tight')
+    #plt.savefig(save_dir + "evolution_entropicPrecision-terms.svg", bbox_extra_artists=(lgd,), bbox_inches='tight')
+    plt.savefig(save_dir + "evolution_entropicPrecision-concepts.svg", bbox_extra_artists=(lgd,), bbox_inches='tight')
     #plt.show()
                   
 else:

@@ -33,4 +33,8 @@ python "$(pwd)"/MOGP_PLOTTER/plot_avgAvgAvg_Recall_Co1_Co2_Co3_Co4_Co5_Co6.py $1
 # Ejemplo
 #./MOGP_PLOTTER/MOGP_PLOTTER_EVOLUTION.bash /media/cecilia/DISCO2/mogp_with_terms_results/Co1/ /media/cecilia/DISCO2/mogp_with_terms_results/Co2/ /media/cecilia/DISCO2/mogp_with_terms_results/Co3/ /media/cecilia/DISCO2/mogp_with_terms_results/Co4/ /media/cecilia/DISCO2/mogp_with_terms_results/Co5/ /media/cecilia/DISCO2/mogp_with_terms_results/Co6/ /media/cecilia/DISCO2/mogp_with_terms_results/Co7/ /home/cecilia/repos/term_weighting_methods_full_testing_dataset/MOGP/
 
+# terminos
+#./MOGP_PLOTTER/MOGP_PLOTTER_EVOLUTION.bash /media/cecilia/DISCO2/mogp_with_terms_results/Co1/ /media/cecilia/DISCO2/mogp_with_terms_results/Co2/ /media/cecilia/DISCO2/mogp_with_terms_results/Co3/ /media/cecilia/DISCO2/mogp_with_terms_results/Co4/ /media/cecilia/DISCO2/mogp_with_terms_results/Co5/ /media/cecilia/DISCO2/mogp_with_terms_results/Co6/ /media/cecilia/DISCO2/mogp_with_terms_results/Co7/ /home/cecilia/repos/mogp_with_terms/mogp_plots_tesis/
 
+# conceptos
+#./MOGP_PLOTTER/MOGP_PLOTTER_EVOLUTION.bash /media/cecilia/DISCO2/mogp_with_concepts_results/results_mogp_concepts/Co1/ /media/cecilia/DISCO2/mogp_with_concepts_results/results_mogp_concepts/Co2/ /media/cecilia/DISCO2/mogp_with_concepts_results/results_mogp_concepts/Co3/ /media/cecilia/DISCO2/mogp_with_concepts_results/results_mogp_concepts/Co4/ /media/cecilia/DISCO2/mogp_with_concepts_results/results_mogp_concepts/Co5/ /media/cecilia/DISCO2/mogp_with_concepts_results/results_mogp_concepts/Co6/ /media/cecilia/DISCO2/mogp_with_concepts_results/results_mogp_concepts/Co7/ /home/cecilia/repos/mogp_with_terms/mogp_plots_tesis/

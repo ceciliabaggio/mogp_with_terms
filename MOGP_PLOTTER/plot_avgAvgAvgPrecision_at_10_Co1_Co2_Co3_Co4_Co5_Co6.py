@@ -240,7 +240,8 @@ if len(sys.argv) == 9:
         if combinations_dir[i]:        
             plot_avgAvgAvgPrecision_at_10(combinations_dir[i], i+1)
                 
-    plt.savefig(save_dir +"evolution_precision@10-terms.svg", bbox_extra_artists=(lgd,), bbox_inches='tight')
+    #plt.savefig(save_dir +"evolution_precision@10-terms.svg", bbox_extra_artists=(lgd,), bbox_inches='tight')
+    plt.savefig(save_dir +"evolution_precision@10-concepts.svg", bbox_extra_artists=(lgd,), bbox_inches='tight')
   
     
                   
