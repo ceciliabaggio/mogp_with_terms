@@ -247,7 +247,7 @@ if len(sys.argv) == 2:
     save_dir= str(sys.argv[1])    
     fig = plt.figure()    
     NORMFIT_CI_1st_and_last_gen_PRECISION(save_dir)                
-    plt.savefig(save_dir+ "TESTING_CI_Precision@10-terms.svg")
+    plt.savefig(save_dir+ "TESTING_CI_Precision@10-concepts.svg")
     #plt.show()
                   
 else:

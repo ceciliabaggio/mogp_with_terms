@@ -20,3 +20,7 @@ echo $1
 python "$(pwd)"/MOGP_PLOTTER/EVAL_NORMFIT_CI_1st_and_last_gen_GLOBAL_RECALL.py $1
 python "$(pwd)"/MOGP_PLOTTER/EVAL_NORMFIT_CI_1st_and_last_gen_PRECISION_at_10.py $1
 python "$(pwd)"/MOGP_PLOTTER/EVAL_NORMFIT_CI_1st_and_last_gen_JACCARD.py $1
+
+
+# con conceptos
+#./MOGP_PLOTTER/MOGP_PLOTTER_TESTING.bash /media/cecilia/DISCO2/mogp_with_concepts_results/results_mogp_concepts/
