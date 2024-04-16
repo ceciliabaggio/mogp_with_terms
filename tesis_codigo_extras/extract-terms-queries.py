@@ -7,7 +7,7 @@ def find_between( s, first, last ):
         return ""
     
 
-f = open('/home/cecilia/repos/mogp_with_terms/tesis_codigo_extras/Co3_529_1_EntropicPrec@10-EntropicRecall_nGen(150)_popSize(100)_indSize(XX)_cross(0.7)_mut(0.3)_seed(12803)_queries_last_gen.txt', 'r')
+f = open('/home/cecilia/repos/mogp_with_terms/tesis_codigo_extras/Co3_concepts_529_1_EntropicPrec@10-EntropicRecall_nGen(150)_popSize(100)_indSize(XX)_cross(0.7)_mut(0.3)_seed(12803)_queries_last_gen.txt', 'r')
 s = f.read()
 f.close()
 
