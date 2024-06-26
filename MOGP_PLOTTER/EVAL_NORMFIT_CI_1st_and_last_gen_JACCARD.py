@@ -241,7 +241,7 @@ if len(sys.argv) == 2:
     save_dir= str(sys.argv[1])    
     fig = plt.figure()    
     NORMFIT_CI_1st_and_last_gen_GLOBAL_JACCARD(save_dir)                
-    plt.savefig(save_dir+ "TESTING_CI_Global_Jaccard-concepts.svg")
+    plt.savefig(save_dir+ "TESTING_CI_Global_Jaccard-mixed.svg")
     #plt.show()
                   
 else:

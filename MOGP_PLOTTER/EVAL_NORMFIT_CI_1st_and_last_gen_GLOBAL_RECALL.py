@@ -240,7 +240,7 @@ if len(sys.argv) == 2:
     save_dir= str(sys.argv[1])    
     fig = plt.figure()    
     NORMFIT_CI_1st_and_last_gen_GLOBAL_RECALL(save_dir)                
-    plt.savefig(save_dir+ "TESTING_CI_Global_Recall-concepts.svg")
+    plt.savefig(save_dir+ "TESTING_CI_Global_Recall-mixed.svg")
     #plt.show()
                   
 else:
